@@ -35,38 +35,32 @@ limitations under the License.
 
 > Base (i.e., lower-level) WebAssembly utility namespace.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/wasm-base
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/wasm-base/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/wasm-base' );
 ```
 
 #### ns
@@ -82,6 +76,15 @@ The namespace contains the following:
 
 <!-- <toc pattern="*"> -->
 
+<div class="namespace-toc">
+
+-   <span class="signature">[`array2dtype( array )`][@stdlib/wasm/base/array2dtype]</span><span class="delimiter">: </span><span class="description">return the WebAssembly data type for a provided array.</span>
+-   <span class="signature">[`arrays2ptrs( ctx, arrays )`][@stdlib/wasm/base/arrays2ptrs]</span><span class="delimiter">: </span><span class="description">convert a list of arrays to "pointers" (i.e., byte offsets) in WebAssembly module memory.</span>
+-   <span class="signature">[`dtype2wasm( dtype )`][@stdlib/wasm/base/dtype2wasm]</span><span class="delimiter">: </span><span class="description">return the WebAssembly data type associated with a provided array data type value.</span>
+-   <span class="signature">[`strided2object( N, x, stride, offset )`][@stdlib/wasm/base/strided2object]</span><span class="delimiter">: </span><span class="description">convert a strided array and associated metadata to an object likely to have the same "shape".</span>
+
+</div>
+
 <!-- </toc> -->
 
 </section>
@@ -96,21 +99,11 @@ The namespace contains the following:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils-keys' );
+var ns = require( '@stdlib/wasm-base' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -198,6 +191,14 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/wasm-base/main/LICENSE
 
 <!-- <toc-links> -->
+
+[@stdlib/wasm/base/array2dtype]: https://github.com/stdlib-js/wasm-base-array2dtype
+
+[@stdlib/wasm/base/arrays2ptrs]: https://github.com/stdlib-js/wasm-base-arrays2ptrs
+
+[@stdlib/wasm/base/dtype2wasm]: https://github.com/stdlib-js/wasm-base-dtype2wasm
+
+[@stdlib/wasm/base/strided2object]: https://github.com/stdlib-js/wasm-base-strided2object
 
 <!-- </toc-links> -->
 
