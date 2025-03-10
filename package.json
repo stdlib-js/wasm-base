@@ -40,7 +40,8 @@
     "@stdlib/wasm-base-array2dtype": "github:stdlib-js/wasm-base-array2dtype#main",
     "@stdlib/wasm-base-arrays2ptrs": "github:stdlib-js/wasm-base-arrays2ptrs#main",
     "@stdlib/wasm-base-dtype2wasm": "github:stdlib-js/wasm-base-dtype2wasm#main",
-    "@stdlib/wasm-base-strided2object": "github:stdlib-js/wasm-base-strided2object#main"
+    "@stdlib/wasm-base-strided2object": "github:stdlib-js/wasm-base-strided2object#main",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-base-zeros": "^0.2.2",
