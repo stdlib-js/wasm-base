@@ -4,59 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-10)
-
-<section class="packages">
-
-### Packages
-
-<section class="package" id="wasm-base-unreleased">
-
-#### [@stdlib/wasm/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/wasm/base)
-
-<details>
+## Unreleased (2025-06-30)
 
 <section class="features">
 
-##### Features
+### Features
 
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
 -   [`db91373`](https://github.com/stdlib-js/stdlib/commit/db91373ac57c11965c341e4d802aed5ee3e470bd) - add `strided2object` to namespace
+-   [`ca7b037`](https://github.com/stdlib-js/stdlib/commit/ca7b0375bac4ab292d93081e94e8e51a637ba64d) - add `wasm/base/strided2object`
 -   [`0d49560`](https://github.com/stdlib-js/stdlib/commit/0d49560dc69e5baa1e154ef5246ced6689d8fbff) - add `wasm/base` namespace
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec): update namespace declarations
-
-    -   To migrate, users should consult the corresponding packages containing the respective implementations to determine what is breaking. The primary breakages come from the `blas/*` namespace, where we recently refactored how top-level BLAS APIs operate on input arguments.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="wasm-base-array2dtype-unreleased">
-
-#### [@stdlib/wasm/base/array2dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/wasm/base/array2dtype)
-
-<details>
-
-<section class="features">
-
-##### Features
-
+-   [`be28c74`](https://github.com/stdlib-js/stdlib/commit/be28c74db2fee7929fbaa01487d615f860be645b) - add `wasm/base/arrays2ptrs`
 -   [`e799140`](https://github.com/stdlib-js/stdlib/commit/e799140f66eee9b9bd4508c7215f49d2e58c0e78) - add `wasm/base/array2dtype`
+-   [`f57bee2`](https://github.com/stdlib-js/stdlib/commit/f57bee2b4155d60bd0f3a8f0ca5103f30d34d842) - add `wasm/base/dtype2wasm`
 
 </section>
 
@@ -64,89 +24,13 @@
 
 <section class="bug-fixes">
 
-##### Bug Fixes
+### Bug Fixes
 
 -   [`6065197`](https://github.com/stdlib-js/stdlib/commit/6065197c84ea621bd2c0fe0028d6349275e8d044) - update package name
 
 </section>
 
 <!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="wasm-base-arrays2ptrs-unreleased">
-
-#### [@stdlib/wasm/base/arrays2ptrs](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/wasm/base/arrays2ptrs)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`be28c74`](https://github.com/stdlib-js/stdlib/commit/be28c74db2fee7929fbaa01487d615f860be645b) - add `wasm/base/arrays2ptrs`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="wasm-base-dtype2wasm-unreleased">
-
-#### [@stdlib/wasm/base/dtype2wasm](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/wasm/base/dtype2wasm)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`f57bee2`](https://github.com/stdlib-js/stdlib/commit/f57bee2b4155d60bd0f3a8f0ca5103f30d34d842) - add `wasm/base/dtype2wasm`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="wasm-base-strided2object-unreleased">
-
-#### [@stdlib/wasm/base/strided2object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/wasm/base/strided2object)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`ca7b037`](https://github.com/stdlib-js/stdlib/commit/ca7b0375bac4ab292d93081e94e8e51a637ba64d) - add `wasm/base/strided2object`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-</section>
-
-<!-- /.packages -->
 
 <section class="breaking-changes">
 
@@ -159,19 +43,6 @@
 </section>
 
 <!-- /.breaking-changes -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 2 people contributed to this release. Thank you to the following contributors:
-
--   Athan Reines
--   Philipp Burckhardt
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -202,6 +73,19 @@ A total of 2 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
