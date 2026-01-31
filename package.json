@@ -62,7 +62,7 @@
     "@stdlib/object-assign": "^0.2.2",
     "@stdlib/strided-base-strided2object": "github:stdlib-js/strided-base-strided2object#main",
     "@stdlib/strided-base-write-dataview": "github:stdlib-js/strided-base-write-dataview#main",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
     "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
     "@stdlib/utils-keys": "^0.2.2",
